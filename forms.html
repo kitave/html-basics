@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        body{
+            background: #9932cc;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        form{
+            width: 50%;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            
+            
+        }
+
+        .lbl-full{
+            display:block;  /* stretch the whole width */
+        }
+
+        .input-full-w{
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            box-sizing: border-box;  /* include padding and border in the width */
+            
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Form inputs=text,email,password,phone,dob, radio button, checkbox,select -->
+
+    <form action="">
+        <label class= "lbl-full" for="full_name">Full Name</label>
+        <input class="input-full-w" type="text" name="full_name" id="full_name" placeholder="Jane Doe" required>
+
+        <label class= "lbl-full" for="email">Email</label>
+        <input class="input-full-w" type="email" name="email" id="email" placeholder="jane.doe@example.com" required>
+
+        <label class= "lbl-full" for="password">Password</label>
+        <input class="input-full-w" type="password" name="password" id="password" placeholder="********" required>
+
+        <label class= "lbl-full" for="phone">Phone</label>
+        <input class="input-full-w" type="tel" name="phone" id="phone" placeholder="+254 712 345 678">
+
+        <label class= "lbl-full" for="dob">Date of Birth</label>
+        <input class="input-full-w" type="date" name="dob" id="dob" required min="1900-01-01" max="2024-12-31">
+
+        <label class= "lbl-full" for="gender">Gender</label>
+        <input type="radio" name="gender" id="male" value="male">
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="female" value="female">
+        <label for="female">Female</label>
+
+        <input type="checkbox" name="Tennis" id="tennis" value="tennis">
+        <label for="tennis">Tennis</label>
+
+        <input type="checkbox" name="Football" id="football" value="football">
+        <label for="football">Football</label>
+
+        <input type="checkbox" name="Basketball" id="basketball" value="basketball">
+        <label for="basketball">Basketball</label>
+
+        <label for="country">Country</label>
+        <select name="country" id="country">
+            <option value="kenya">Kenya</option>
+            <option value="uganda">Uganda</option>
+            <option value="tanzania">Tanzania</option>
+        </select>
+
+        <label for="county">County</label>
+        <select name="county" id="county">
+            <option value="nairobi">Nairobi</option>
+            <option value="mombasa">Mombasa</option>
+            <option value="kisumu">Kisumu</option>
+        </select>
+    </form>
+</body>
+</html>

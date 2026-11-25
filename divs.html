@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divs</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link 
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Edu+QLD+Hand:wght@400..700&display=swap" rel="stylesheet">
+    <style>
+        /*target elements*/
+        p{
+            color:brown;
+            font-size: 20px;
+            font-family: "Edu QLD Hand", cursive;
+        }
+
+        h2{
+            color:#0ff4e1;
+            font-family: "Dancing Script", cursive;
+        }
+
+        div{
+            background: #89979b;
+            padding-left: 15px;
+            padding-right: 13px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            /* padding: 10px 15px; ->top + bottom,,,left + right */ 
+            /* padding: 10px 20px 10px 20px; top right bottom left ->(cloclwise direction) */
+            margin: 10px;
+            border: 5px dotted #3c1bcef1;
+            width: 50%;
+        }
+
+        /* body{
+            font-family: "Dancing Script", cursive;
+        } */
+    </style>
+</head>
+
+<body>
+    <div>
+        <!-- inline css -->
+        <!-- <h2 style="color: aqua;" >Lorem, ipsum dolor.</h2> -->
+        <h2 >Lorem, ipsum dolor.</h2>
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+    </div>
+
+    <div>
+        <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+        </div>
+        <div>
+            <p>Lorem, ipsum.
+            Est, nesciunt.
+            Iure, beatae!</p>
+        </div>
+        <div>
+            <p>Lorem ipsum dolor sit.
+            Voluptas ipsa quae ipsum!</p>
+        </div>
+    </div>
+</body>
+
+</html>
